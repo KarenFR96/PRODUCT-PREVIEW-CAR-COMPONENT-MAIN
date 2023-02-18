@@ -1,0 +1,112 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/*SE USA PARA QUE TODO EL CONTENIDO DE LA CAJA SE ACOMODE, SE APRETE UN POCO (SACADO DE:https://css-tricks.com/box-sizing/
+Universal Box Sizing with Inheritance)*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  /*LOS ASTERISCOS SIGNIFICA QUE TOMA TODO EL SITIO WEB*/
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--cream);
+}
+
+.container {
+  background-color: #ffffff;
+  width: 475px;
+  height: 356px;
+  margin-top: 130px;
+  margin-bottom: 130px;
+  border-radius: 10px;
+
+  /*FLEXBOX*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*Para centrar los elementos en el centro verticalmente sabiendo que el main axis es x y hace que el sitio sea responsivo y que tome la medida del contenedor*/
+  align-items: center;
+  height: 100%;
+}
+
+.cardImagen {
+  padding: 0px;
+}
+
+.card-img {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.card-text {
+  margin-top: 20px;
+  padding: 0px 20px 0px 20px;
+}
+
+.card-text-t1 {
+  letter-spacing: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: var(--dark-grayish-blue);
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+  margin-top: 20px;
+}
+
+.card-text h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--dark-cyan);
+}
+
+.card-text h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: var(--dark-grayish-blue);
+  padding: 0px 20px 0px 20px;
+  text-decoration: line-through; /*propiedad y valor para poner una linea sobre el texto*/
+}
+
+.card-prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card_button {
+  margin-top: 10px;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 12px;
+  width: 183px;
+  height: 40px;
+}
+
+.cart_icon {
+  padding: 0px 10px;
+  height: 12px;
+}
